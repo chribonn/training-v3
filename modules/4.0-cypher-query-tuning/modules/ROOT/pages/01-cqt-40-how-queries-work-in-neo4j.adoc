@@ -766,6 +766,16 @@ CALL apoc.meta.graph()
 
 [.notes]
 --
+Alternatively you can use:
+--
+
+[source,Cypher,role=noplay]
+----
+CALL db.schema.visualization
+----
+
+[.notes]
+--
 This is obviously best viewed in Neo4j Browser.
 
 If you view the data for each node presented, it will also display counts for each node  and relationship type.
