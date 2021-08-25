@@ -288,13 +288,8 @@ Here are some ways that you can warm up the Page Cache:
 
 [source,Cypher,role=noplay]
 ----
-MATCH (n) RETURN max(id(n))
-MATCH ()-[rel]->() RETURN max(id(rel))
-// or
-CALL apoc.warmup.run() //nodes and relationships
-CALL apoc.warmup.run(true) // include properties
-CALL apoc.warmup.run(true,true) // include large strings and arrays
-CALL apoc.warmup.run(true,true,true) // include indexes
+MATCH (n) RETURN max(id(n));
+MATCH ()-[rel]->() RETURN max(id(rel));
 ----
 
 [NOTE]
